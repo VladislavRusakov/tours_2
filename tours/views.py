@@ -15,5 +15,3 @@ def tour_view(request, id):
 
 def not_found_handler(request, exception):
     return render(request, '404.html')
-
-
