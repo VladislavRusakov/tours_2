@@ -1,0 +1,116 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+{% if request.path == "/departure/nsk" %}
+
+<main class="container mt-3">
+    <h1 class="display-5 mt-4">Летим из Новосибирска</h1>
+    <p class="mb-4">Найдено 15 туров, от 26 000 до 84 600 и от 4 ночей до 15 ночей</p>
+
+
+{% elif request.path == "/departure/msk" %}
+
+<main class="container mt-3">
+<h1 class="display-5 mt-4">Летим из Москвы</h1>
+<p class="mb-4">Найдено 15 туров, от 26 000 до 84 600 и от 4 ночей до 15 ночей</p>
+
+
+{% elif request.path == "/departure/kazan" %}
+
+<main class="container mt-3">
+<h1 class="display-5 mt-4">Летим из Казани</h1>
+<p class="mb-4">Найдено 15 туров, от 26 000 до 84 600 и от 4 ночей до 15 ночей</p>
+
+
+{% elif request.path == "/departure/spb" %}
+
+<main class="container mt-3">
+<h1 class="display-5 mt-4">Летим из Санкт-Петербурга</h1>
+<p class="mb-4">Найдено 15 туров, от 26 000 до 84 600 и от 4 ночей до 15 ночей</p>
+
+
+{% elif request.path == "/departure/ekb" %}
+
+<main class="container mt-3">
+<h1 class="display-5 mt-4">Летим из Екатеринбурга</h1>
+<p class="mb-4">Найдено 15 туров, от 26 000 до 84 600 и от 4 ночей до 15 ночей</p>
+
+{% endif %}
+
+{% for tour_id, tour in tours.items %}
+
+    {% if tour.departure == "nsk" and request.path == "/departure/nsk" %}
+<div class="row mt-5">
+    <div class="col-8">
+        <div class="card mb-4">
+            <img src="{{ tour.picture }}" class="card-img-top img-fluid" alt="">
+            <div class="card-body">
+                <h2 class="h5 card-title">{{ tour.title }}</h2>
+                <p class="card-text">{{ tour.description }}</p>
+                <a href="#" class="btn btn-sm btn-primary">Подробнее</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+    {% elif tour.departure == "spb" and request.path == "/departure/spb" %}
+<div class="row mt-5">
+    <div class="col-8">
+        <div class="card mb-4">
+            <img src="{{ tour.picture }}" class="card-img-top img-fluid" alt="">
+            <div class="card-body">
+                <h2 class="h5 card-title">{{ tour.title }}</h2>
+                <p class="card-text">{{ tour.description }}</p>
+                <a href="#" class="btn btn-sm btn-primary">Подробнее</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+        {% elif tour.departure == "msk" and request.path == "/departure/msk" %}
+<div class="row mt-5">
+    <div class="col-8">
+        <div class="card mb-4">
+            <img src="{{ tour.picture }}" class="card-img-top img-fluid" alt="">
+            <div class="card-body">
+                <h2 class="h5 card-title">{{ tour.title }}</h2>
+                <p class="card-text">{{ tour.description }}</p>
+                <a href="#" class="btn btn-sm btn-primary">Подробнее</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+    {% elif tour.departure == "ekb" and request.path == "/departure/ekb" %}
+<div class="row mt-5">
+    <div class="col-8">
+        <div class="card mb-4">
+            <img src="{{ tour.picture }}" class="card-img-top img-fluid" alt="">
+            <div class="card-body">
+                <h2 class="h5 card-title">{{ tour.title }}</h2>
+                <p class="card-text">{{ tour.description }}</p>
+                <a href="#" class="btn btn-sm btn-primary">Подробнее</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+    {% elif tour.departure == "kazan" and request.path == "/departure/kazan" %}
+<div class="row mt-5">
+    <div class="col-8">
+        <div class="card mb-4">
+            <img src="{{ tour.picture }}" class="card-img-top img-fluid" alt="">
+            <div class="card-body">
+                <h2 class="h5 card-title">{{ tour.title }}</h2>
+                <p class="card-text">{{ tour.description }}</p>
+                <a href="#" class="btn btn-sm btn-primary">Подробнее</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endif %}
+{% endfor %}
+</main>
+{% endblock %}

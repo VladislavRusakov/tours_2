@@ -1,0 +1,90 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<main class="container mt-3">
+    <!-- HERO -->
+    <section class="jumbotron text-center mt-4"
+             style="background: url('https://i.imgur.com/9BI86QG.png'); background-position: center center">
+        <h1 class="display-4">Всякие туры</h1>
+        <p class="lead">Для тех, кого отвлекают дома</p>
+        <p class="mt-5 w-50 mx-auto">Лучшие направления, где никто не помешает вам сидеть на берегу и изучать
+            программирование, дизайн, разработку игр или управление продуктами</p>
+    </section>
+    <!-- CARDS -->
+    <div class="row mt-5">
+        <div class="col-4">
+            <div class="card mb-4">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <img class="card-img-top embed-responsive-item" src="{{ six_tours.1.picture }}" alt=""/>
+                </div>
+                <div class="card-body">
+                    <h2 class="h5 card-title">{{ six_tours.1.title }}</h2>
+                    <p class="card-text">{{ six_tours.1.description | slice:":200" }}...</p>
+                    <a href="#" class="btn btn-sm btn-primary">Подробнее</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="card mb-4">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <img class="card-img-top embed-responsive-item" src="{{ six_tours.2.picture }}" alt=""/>
+                </div>
+                <div class="card-body">
+                    <h2 class="h5 card-title">{{ six_tours.2.title }}</h2>
+                    <p class="card-text">{{ six_tours.2.description | slice:":200" }}...</p>
+                    <a href="#" class="btn btn-sm btn-primary">Подробнее</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="card mb-4">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <img class="card-img-top embed-responsive-item" src="{{ six_tours.3.picture }}" alt=""/>
+                </div>
+                <div class="card-body">
+                    <h2 class="h5 card-title">{{ six_tours.3.title }}</h2>
+                    <p class="card-text">{{ six_tours.3.description | slice:":200" }}...</p>
+                    <a href="#" class="btn btn-sm btn-primary">Подробнее</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="card mb-4">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <img class="card-img-top embed-responsive-item" src="{{ six_tours.4.picture }}" alt=""/>
+                </div>
+                <div class="card-body">
+                    <h2 class="h5 card-title">{{ six_tours.4.title }}</h2>
+                    <p class="card-text">{{ six_tours.4.description | slice:":200" }}...</p>
+                    <a href="#" class="btn btn-sm btn-primary">Подробнее</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="card mb-4">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <img class="card-img-top embed-responsive-item" src="{{ six_tours.5.picture }}" alt=""/>
+                </div>
+                <div class="card-body">
+                    <h2 class="h5 card-title">{{ six_tours.5.title }}</h2>
+                    <p class="card-text">{{ six_tours.5.description | slice:":200" }}...</p>
+                    <a href="#" class="btn btn-sm btn-primary">Подробнее</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="card mb-4">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <img class="card-img-top embed-responsive-item" src="{{ six_tours.0.picture }}" alt=""/>
+                </div>
+                <div class="card-body">
+                    <h2 class="h5 card-title">{{ six_tours.0.title }}</h2>
+                    <p class="card-text">{{ six_tours.0.description | slice:":200" }}...</p>
+                    <a href="#" class="btn btn-sm btn-primary">Подробнее</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+{% endblock %}
