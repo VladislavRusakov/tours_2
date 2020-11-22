@@ -1,13 +1,15 @@
 from random import sample
 
-from .data import tours
+from stepik_tours.data import tours, departures
 
-def Data(request):
+
+def data(request):
     arr = {'tours':tours}
+
     return arr
 
 
-def SixTours(request):
+def six_tours(request):
     random_tours_ids = sample([i for i in tours.keys()], 6)
 
     random_tours = {}
@@ -16,3 +18,20 @@ def SixTours(request):
     content = {'six_tours':random_tours}
 
     return content
+
+
+def star_counter(request):
+
+    star_data ={}
+    for i in range(1, 17):
+        star_data[i] = "★" * int(tours[i]["stars"])
+    #  Key - tour_id: value - stars
+    star_data = {'star_data':star_data}
+
+    return star_data
+
+
+def city_cases(request):
+    data = {'cases':departures}
+
+    return data

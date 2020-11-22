@@ -1,10 +1,11 @@
 from django.urls import path
-from .views import MainView, NotFoundHandler
+
+from .views import main_view, not_found_handler
 
 
-handler404 = NotFoundHandler
+handler404 = not_found_handler
 
 
 urlpatterns = [
-    path('', MainView, name='main'),
+    path('', main_view, name='main'),
 ]

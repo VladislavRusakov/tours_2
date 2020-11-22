@@ -15,6 +15,7 @@ tours = {
             "country": "Куба",
             "nights": 6,
             "date": "2 марта",
+            "link":"/tour/1",
         },
         2: {
             "title": "Baroque Hotel",
@@ -26,6 +27,7 @@ tours = {
             "country": "Вьетнам",
             "nights": 8,
             "date": "12 января",
+            "link":"/tour/2",
         },
         3: {
             "title": "Voyager Resort",
@@ -37,6 +39,7 @@ tours = {
             "country": "Пакистан",
             "nights": 11,
             "date": "7 февраля",
+            "link":"/tour/3",
         },
         4: {
             "title": "Orbit Hotel",
@@ -48,6 +51,7 @@ tours = {
             "country": "Индия",
             "nights": 9,
             "date": "22 января",
+            "link":"/tour/4",
         },
         5: {
             "title": "Atlantis Cabin Hotel",
@@ -59,6 +63,7 @@ tours = {
             "country": "Доминикана",
             "nights": 8,
             "date": "18 января",
+            "link":"/tour/5",
         },
         6: {
             "title": "Light Renaissance Hotel",
@@ -70,6 +75,7 @@ tours = {
             "country": "Пакистан",
             "nights": 13,
             "date": "15 февраля",
+            "link":"/tour/6",
         },
         7: {
             "title": "King's Majesty Hotel",
@@ -81,6 +87,7 @@ tours = {
             "country": "Мексика",
             "nights": 9,
             "date": "22 января",
+            "link":"/tour/7",
         },
         8: {
             "title": "Crown Hotel",
@@ -92,6 +99,7 @@ tours = {
             "country": "Тайланд",
             "nights": 7,
             "date": "3 февраля",
+            "link":"/tour/8",
         },
         9: {
             "title": "Seascape Resort",
@@ -103,6 +111,7 @@ tours = {
             "country": "Индия",
             "nights": 10,
             "date": "1 февраля",
+            "link":"/tour/9",
         },
         10: {
             "title": "Rose Sanctum Hotel",
@@ -114,6 +123,7 @@ tours = {
             "country": "Куба",
             "nights": 10,
             "date": "30 января",
+            "link":"/tour/10",
         },
         11: {
             "title": "Viridian Obelisk Hotel & Spa",
@@ -125,6 +135,7 @@ tours = {
             "country": "Индия",
             "nights": 9,
             "date": "1 марта",
+            "link":"/tour/11",
         },
         12: {
             "title": "Saffron Tundra Hotel & Spa",
@@ -136,6 +147,7 @@ tours = {
             "country": "Мексика",
             "nights": 12,
             "date": "17 февраля",
+            "link":"/tour/12",
         },
         13: {
             "title": "Traveller Resort",
@@ -146,7 +158,8 @@ tours = {
             "stars": "3",
             "country": "Куба",
             "nights": 8,
-            "date": "26 января"
+            "date": "26 января",
+            "link":"/tour/13",
         },
         14: {
             "title": "History Hotel & Spa",
@@ -158,6 +171,7 @@ tours = {
             "country": "Вьетнам",
             "nights": 9,
             "date": "3 февраля",
+            "link":"/tour/14",
         },
         15: {
             "title": "Riverside Lagoon Hotel & Spa",
@@ -169,6 +183,7 @@ tours = {
             "country": "Доминикана",
             "nights": 8,
             "date": "5 февраля",
+            "link":"/tour/15",
         },
         16: {
             "title": "History Hotel & Spa",
@@ -180,5 +195,6 @@ tours = {
             "country": "Вьетнам",
             "nights": 12,
             "date": "24 января",
+            "link":"/tour/16",
         }
    }

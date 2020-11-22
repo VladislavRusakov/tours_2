@@ -1,19 +1,19 @@
 from django.shortcuts import render
 
 
-def MainView(request):
+def main_view(request):
     return render(request, 'index.html')
 
 
-def DepartureView(request, departure):
+def departure_view(request, departure):
     return render(request, 'departure.html')
 
 
-def TourView(request, id):
+def tour_view(request, id):
     return render(request, 'tours.html')
 
 
-def NotFoundHandler(request, exception):
+def not_found_handler(request, exception):
     return render(request, '404.html')
 
 

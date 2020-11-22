@@ -5,8 +5,8 @@
 {% if request.path == "/departure/nsk" %}
 
 <main class="container mt-3">
-    <h1 class="display-5 mt-4">Летим из Новосибирска</h1>
-    <p class="mb-4">Найдено 15 туров, от 26 000 до 84 600 и от 4 ночей до 15 ночей</p>
+<h1 class="display-5 mt-4">Летим из Новосибирска</h1>
+<p class="mb-4">Найдено 15 туров, от 26 000 до 84 600 и от 4 ночей до 15 ночей</p>
 
 
 {% elif request.path == "/departure/msk" %}
@@ -48,7 +48,7 @@
             <div class="card-body">
                 <h2 class="h5 card-title">{{ tour.title }}</h2>
                 <p class="card-text">{{ tour.description }}</p>
-                <a href="#" class="btn btn-sm btn-primary">Подробнее</a>
+                <a href="/tour/{{ tour_id }}" class="btn btn-sm btn-primary">Подробнее</a>
             </div>
         </div>
     </div>
@@ -62,7 +62,7 @@
             <div class="card-body">
                 <h2 class="h5 card-title">{{ tour.title }}</h2>
                 <p class="card-text">{{ tour.description }}</p>
-                <a href="#" class="btn btn-sm btn-primary">Подробнее</a>
+                <a href="/tour/{{ tour_id }}" class="btn btn-sm btn-primary">Подробнее</a>
             </div>
         </div>
     </div>
@@ -76,7 +76,7 @@
             <div class="card-body">
                 <h2 class="h5 card-title">{{ tour.title }}</h2>
                 <p class="card-text">{{ tour.description }}</p>
-                <a href="#" class="btn btn-sm btn-primary">Подробнее</a>
+                <a href="/tour/{{ tour_id }}" class="btn btn-sm btn-primary">Подробнее</a>
             </div>
         </div>
     </div>
@@ -90,7 +90,7 @@
             <div class="card-body">
                 <h2 class="h5 card-title">{{ tour.title }}</h2>
                 <p class="card-text">{{ tour.description }}</p>
-                <a href="#" class="btn btn-sm btn-primary">Подробнее</a>
+                <a href="/tour/{{ tour_id }}" class="btn btn-sm btn-primary">Подробнее</a>
             </div>
         </div>
     </div>
@@ -104,7 +104,7 @@
             <div class="card-body">
                 <h2 class="h5 card-title">{{ tour.title }}</h2>
                 <p class="card-text">{{ tour.description }}</p>
-                <a href="#" class="btn btn-sm btn-primary">Подробнее</a>
+                <a href="/tour/{{ tour_id }}" class="btn btn-sm btn-primary">Подробнее</a>
             </div>
         </div>
     </div>
